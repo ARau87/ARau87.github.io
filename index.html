@@ -4,18 +4,31 @@
     <meta charset="utf-8">
     <title>Andreas Rau - Developer</title>
   </head>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lusitana">
+  <link rel="stylesheet" href="./css/global.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
   <body>
     <header>
-      <div class="div-left logo"></div>
-      <div class="div-right burger">
-        <!-- Animated Burger Icon -->
-        <div class="burger-icon bar1"></div>
-        <div class="burger-icon bar2"></div>
-        <div class="burger-icon bar3"></div>
+      <div class="header-first logo">Andreas Rau</div>
+      <div class="header-second burger-wrapper">
+        <div class="burger">
+          <!-- Animated Burger Icon -->
+          <div class="burger-icon bar1"></div>
+          <div class="burger-icon bar2"></div>
+          <div class="burger-icon bar3"></div>
+        </div>
       </div>
     </header>
+
+    <div class="greeting">
+        <h1 class="name greeting-header">Andreas Rau</h1>
+        <p class="paragraph greeting-text">I am a javascript developer from Munich, Germany.</p>
+    </div>
+
     <main>
-      <nav class="mobile-nav" hidden>
+      <nav class="mobile-nav mobile-nav--hidden">
         <!-- Visible if menu button is clicked -->
         <div class="mobile-nav-item">Home</div>
         <div class="mobile-nav-item">Work</div>
@@ -23,8 +36,8 @@
         <div class="mobile-nav-item">Contact</div>
       </nav>
 
-      <section class="content">
-        <!-- Hidden if mobile-nav is visible -->
+      <section class="projects">
+        <h3 class="section-header projects-header">Check out my latest projects!</h3>
         <div class="thumbnail thumbnail-project1">Project 1</div>
         <div class="thumbnail thumbnail-project2">Project 2</div>
         <div class="thumbnail thumbnail-project3">Project 3</div>
@@ -32,7 +45,10 @@
     </main>
 
     <footer>
+      <h3 class="section-header contact-header">Send me a mail!</h3>
       <span class="email">andirau@gmx.de</span>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

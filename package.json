@@ -1,0 +1,25 @@
+{
+  "name": "arau87.github.io",
+  "version": "0.0.1",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARau87/arau87.github.io.git"
+  },
+  "author": "Andreas Rau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARau87/arau87.github.io/issues"
+  },
+  "homepage": "https://github.com/ARau87/arau87.github.io#readme",
+  "devDependencies": {
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1"
+  }
+}
