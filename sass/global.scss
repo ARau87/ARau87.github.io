@@ -6,13 +6,10 @@
 
 // FRAMEWORK - Structure and layout files
 @import "framework/_layout";
+@import "framework/_grid";
 
 // MODULES - Reusable site elements
-@import "modules/_hamburger_icon";
-@import "modules/_logo";
-@import "modules/_thumbnail";
-@import "modules/_greeting";
-@import "modules/_mobile_nav";
-@import "modules/_section";
-
+@import "modules/_body";
 @import "modules/_header";
+@import "modules/_aboutme";
+@import "modules/_expertise";

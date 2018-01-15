@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/ARau87/arau87.github.io#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp": "^3.9.1"
+    "gulp-sass": "^3.1.0"
   }
 }

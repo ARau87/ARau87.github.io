@@ -1,0 +1,28 @@
+// ABOUT-ME SECTION
+
+.aboutme-header {
+  margin-top: 55px;
+}
+
+.aboutme-header h2{
+  font-size: 1.3em;
+  font-weight: 400;
+
+  width: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutme-header:after {
+  display: block;
+
+  width: 10%;
+  height: 2px;
+
+  background-color: $color-primary;
+
+  content: " ";
+
+  margin-left: 45%;
+}

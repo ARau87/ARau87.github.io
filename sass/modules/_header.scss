@@ -1,3 +1,67 @@
+// Abstract classes
+
+%navigation-item {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+
+// HEADER STYLES
 header {
-  position: fixed;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/laptop_1920.jpg);
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.nav-wrapper {
+  padding-top: 20px;
+}
+
+.nav-list {
+  text-align: right;
+  list-style: none;
+  margin-top: 0;
+}
+
+.nav-item {
+
+  margin-right: 2%;
+
+  display: inline-block;
+}
+
+.nav-item a:link, .nav-item a:visited {
+  @extend %navigation-item ;
+  transition: border 0.2s;
+}
+
+.nav-item a:hover, .nav-item a:active {
+  @extend %navigation-item ;
+  border-bottom: 2px solid $color-brighter;
+}
+
+.text-logo {
+  padding: 0 0 0 5%;
+  color: #fff;
+}
+
+.hero {
+  margin-top: 280px;
+
+  text-align: center;
+}
+
+.hero-message {
+  font-size: 2em;
+  font-weight: 300;
+
+  color: #fff;
+}
+
+.hero-word-developer {
+  color: $color-brighter;
 }

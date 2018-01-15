@@ -4,51 +4,71 @@
     <meta charset="utf-8">
     <title>Andreas Rau - Developer</title>
   </head>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lusitana">
+  <link href="https://fonts.googleapis.com/css?family=Lusitana|Raleway:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/vendor/ionicons.min.css">
   <link rel="stylesheet" href="./css/global.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
   <body>
     <header>
-      <div class="header-first logo">Andreas Rau</div>
-      <div class="header-second burger-wrapper">
-        <div class="burger">
-          <!-- Animated Burger Icon -->
-          <div class="burger-icon bar1"></div>
-          <div class="burger-icon bar2"></div>
-          <div class="burger-icon bar3"></div>
+      <!-- Logo and main navigation -->
+      <div class="row nav-wrapper">
+        <div class="logo col-6-of-12">
+          <span class="text-logo">Andreas Rau</span>
         </div>
+        <nav class="col-6-of-12">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About Me</a></li>
+            <li class="nav-item"><a href="#">Projects</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
+
+      <!-- Hero message -->
+      <div class="row hero">
+        <h1 class="hero-message col-6-of-12">Hi. My name is Andreas Rau. I am a <span class="hero-word-developer">developer.</span></h1>
+      </div>
+
     </header>
 
-    <div class="greeting">
-        <h1 class="name greeting-header">Andreas Rau</h1>
-        <p class="paragraph greeting-text">I am a javascript developer from Munich, Germany.</p>
-    </div>
+    <!-- Section 1: About me -->
+    <section>
+      <div class="columns aboutme-header">
+        <h2>My expertise</h2>
+      </div>
+      <div class="row expertises">
+        <div class="expertise col-4-of-12">
+          <i class="expertise-icon ion-code"></i>
+          <h3>Coding</h3>
+          <p>
+            Using the HTML5 and CSS3 I am directly designing in the browser.
+            As I have a good knowledge of Javascript and Frontend frameworks
+            like React and Angular I create cool apps that can <br /> communicate with
+            any backend.
+          </p>
+        </div>
 
-    <main>
-      <nav class="mobile-nav mobile-nav--hidden">
-        <!-- Visible if menu button is clicked -->
-        <div class="mobile-nav-item">Home</div>
-        <div class="mobile-nav-item">Work</div>
-        <div class="mobile-nav-item">Blog</div>
-        <div class="mobile-nav-item">Contact</div>
-      </nav>
+        <div class="expertise col-4-of-12">
+          <i class="expertise-icon ion-iphone"></i>
+          <h3>Responsive</h3>
+          <p>
+            All my work is designed and developed with mobile devices in mind.
+            To achieve this I am using - depending on the situation - Progressive Enhancement,
+            Mobile First and <br /> Graceful Degradation.
+          </p>
+        </div>
 
-      <section class="projects">
-        <h3 class="section-header projects-header">Check out my latest projects!</h3>
-        <div class="thumbnail thumbnail-project1">Project 1</div>
-        <div class="thumbnail thumbnail-project2">Project 2</div>
-        <div class="thumbnail thumbnail-project3">Project 3</div>
-      </section>
-    </main>
-
-    <footer>
-      <h3 class="section-header contact-header">Send me a mail!</h3>
-      <span class="email">andirau@gmx.de</span>
-    </footer>
-
-    <script src="./js/main.js"></script>
+        <div class="expertise col-4-of-12">
+          <i class="expertise-icon ion-paintbrush"></i>
+          <h3>Designing</h3>
+          <p>
+            I am sketching and wireframing using common and intuitive UI patterns.
+            My designs are focusing on content structure and simple interaction.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
