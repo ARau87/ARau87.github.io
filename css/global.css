@@ -29,6 +29,18 @@ body {
 .col-12-of-12 {
   width: 100%; }
 
+.col-3-of-12-wol {
+  width: 23.75%;
+  margin-left: 1%; }
+
+.col-4-of-12-wol {
+  width: 32%;
+  margin-left: 1%; }
+
+.col-4-of-12-wol:nth-child(3) {
+  width: 32%;
+  margin: 0 1%; }
+
 .order-1 {
   order: 1; }
 
@@ -83,7 +95,7 @@ header {
   color: #fff; }
 
 .hero {
-  margin-top: 280px;
+  margin-top: 480px;
   text-align: center; }
 
 .hero-message {
@@ -94,7 +106,7 @@ header {
 .hero-word-developer {
   color: #1edab5; }
 
-.aboutme-header {
+.aboutme {
   margin-top: 55px; }
 
 .aboutme-header h2 {
@@ -131,3 +143,60 @@ header {
   color: #1abc9c;
   margin-left: 43%;
   text-align: center; }
+
+.personal-projects {
+  margin-top: 55px;
+  padding-bottom: 55px;
+  background-color: #169e83; }
+
+.personal-projects-header h2 {
+  padding-top: 55px;
+  font-size: 1.3em;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff; }
+
+.personal-projects-header:after {
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #fff;
+  content: " ";
+  margin-left: 45%; }
+
+.projects-container {
+  margin-top: 60px; }
+
+.project-thumbnail, .project-thumbnail:hover {
+  height: 250px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background 0.2s; }
+
+.project-thumbnail h3, .project-thumbnail:hover h3 {
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
+  transition: color 0.2s; }
+
+.project-thumbnail:hover {
+  background-color: #fff; }
+
+.project-thumbnail h3 {
+  color: #fff; }
+
+.project-thumbnail:hover h3 {
+  color: #169e83; }
+
+footer {
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column-reverse; }
+
+.copyright-container {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0; }

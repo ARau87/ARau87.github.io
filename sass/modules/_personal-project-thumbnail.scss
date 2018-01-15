@@ -1,0 +1,40 @@
+// Abstract classes
+
+%thumbnail {
+  height: 250px;
+
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+%thumbnail-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
+  transition: color 0.2s;
+}
+
+
+// PERSONAL PROJECT THUMBNAIL STYLE
+.project-thumbnail {
+  @extend %thumbnail;
+}
+
+.project-thumbnail:hover {
+  @extend %thumbnail;
+
+  background-color: #fff;
+}
+
+.project-thumbnail h3{
+  @extend %thumbnail-header;
+
+  color: #fff;
+}
+
+.project-thumbnail:hover h3{
+  @extend %thumbnail-header;
+
+  color: $color-darker;
+}
