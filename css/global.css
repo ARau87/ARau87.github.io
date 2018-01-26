@@ -648,6 +648,7 @@ header {
 
 .project-thumbnail, .project-thumbnail:hover {
   height: 250px;
+  padding-top: 5px;
   border: 2px solid #169e83;
   border-radius: 5px;
   transition: background 0.2s; }
