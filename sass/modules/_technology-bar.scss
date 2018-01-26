@@ -1,0 +1,38 @@
+.technology {
+  display: flex;
+  flex-direction: row;
+}
+
+.technology-bar-container {
+  width: 70%;
+  display: block;
+  border: solid 2px #fff;
+}
+
+.technology-name {
+  color: #fff;
+  width: 29%;
+  display: block;
+  padding-right: 10px;
+}
+
+.technology-bar {
+  margin: 2px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.technology-bar--empty {
+  opacity: 0;
+  margin: 2px;
+  padding: 0;
+  background-color: #fff;
+}
+
+
+.technology-bar span {
+  display: inline-block;
+  color: $color-darker;
+  width: 100%;
+  text-align: center;
+}

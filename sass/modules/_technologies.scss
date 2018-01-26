@@ -1,13 +1,12 @@
-// PERSONAL PROJECTS SECTION STYLES
-.personal-projects {
+.technologies {
   margin-top: 55px;
 
   padding-bottom: 55px;
 
-  background-color: #fff;
+  background-color: $color-darker;
 }
 
-.personal-projects-header h2 {
+.technologies-header h2 {
   padding-top: 55px;
 
   font-size: 1.3em;
@@ -18,22 +17,22 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: $color-darker;
+  color: #fff;
 }
 
-.personal-projects-header:after {
+.technologies-header:after {
   display: block;
 
   width: 10%;
   height: 2px;
 
-  background-color: $color-darker;
+  background-color: #fff;
 
   content: " ";
 
   margin-left: 45%;
 }
 
-.projects-container {
+.technologies-container {
   margin-top: 60px;
 }

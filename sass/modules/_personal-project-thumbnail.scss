@@ -3,7 +3,7 @@
 %thumbnail {
   height: 250px;
 
-  border: 2px solid #fff;
+  border: 2px solid $color-darker;
   border-radius: 5px;
   transition: background 0.2s;
 }
@@ -24,17 +24,17 @@
 .project-thumbnail:hover {
   @extend %thumbnail;
 
-  background-color: #fff;
+  background-color: $color-darker;
 }
 
 .project-thumbnail h3{
   @extend %thumbnail-header;
 
-  color: #fff;
+  color: $color-darker;
 }
 
 .project-thumbnail:hover h3{
   @extend %thumbnail-header;
 
-  color: $color-darker;
+  color: #fff;
 }

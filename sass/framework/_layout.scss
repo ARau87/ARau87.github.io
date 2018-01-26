@@ -1,0 +1,29 @@
+@for $i from 1 through 100 {
+  .percent-#{$i} {
+    width: $i + 0%;
+  }
+}
+
+@media only screen and (min-width: $big-device){
+
+  .mobile {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: $medium-device) and (max-width: ($big-device)){
+
+  .mobile {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: ($medium-device)){
+
+  .mobile {
+    display: block;
+  }
+
+}

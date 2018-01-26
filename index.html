@@ -2,17 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Andreas Rau - Developer</title>
-  </head>
-  <link href="https://fonts.googleapis.com/css?family=Lusitana|Raleway:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/vendor/ionicons.min.css">
-  <link rel="stylesheet" href="./css/global.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lusitana|Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/vendor/ionicons.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+
+  </head>
   <body>
     <header>
       <!-- Logo and main navigation -->
-      <div class="row nav-wrapper">
+      <div class="nav-wrapper row">
         <div class="logo col-6-of-12">
           <span class="text-logo">Andreas Rau</span>
         </div>
@@ -24,6 +27,10 @@
             <li class="nav-item"><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <div class="col-6-of-12 mobile burger-wrapper">
+          <i class="ion-android-menu burger-icon">
+          </i>
+        </div>
       </div>
 
       <!-- Hero message -->
@@ -52,7 +59,7 @@
 
         <div class="expertise col-4-of-12">
           <i class="expertise-icon ion-iphone"></i>
-          <h3>Responsive</h3>
+          <h3>Responsive Design</h3>
           <p>
             All my work is designed and developed with mobile devices in mind.
             To achieve this I am using - depending on the situation - Progressive Enhancement,
@@ -71,7 +78,48 @@
       </div>
     </section>
 
-    <!-- Section 2: Personal projects -->
+    <!-- Section 2: Techologies -->
+    <section class="technologies">
+      <div class="columns technologies-header">
+        <h2>Knowledges in modern technologies</h2>
+      </div>
+
+      <div class="technologies-container">
+        <div class="row ">
+
+          <div class="technology col-4-of-12-wol">
+            <span class="technology-name">Javascript</span>
+            <div class="technology-bar-container">
+              <div class="technology-bar percent-89">
+                <span>89%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="technology col-4-of-12-wol">
+            <span class="technology-name">HTML5</span>
+            <div class="technology-bar-container">
+              <div class="technology-bar percent-92">
+                <span>92%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="technology col-4-of-12-wol">
+            <span class="technology-name">CSS3</span>
+            <div class="technology-bar-container">
+              <div class="technology-bar percent-83">
+                <span>83%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section 3: Personal projects -->
     <section class="personal-projects">
       <div class="columns personal-projects-header">
         <h2>Side Projects</h2>
@@ -81,7 +129,7 @@
         <div class="row projects">
 
           <div class="project-thumbnail col-4-of-12-wol">
-            <h3>Facebook Chatbot</h3>
+            <h3>Dummy Project</h3>
           </div>
 
           <div class="project-thumbnail col-4-of-12-wol">
@@ -97,7 +145,7 @@
 
     </section>
 
-    <!-- -->
+    <!-- Footer -->
     <footer>
       <div class="copyright-container">
         &copy; 2018 Andreas Rau
