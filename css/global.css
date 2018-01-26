@@ -481,6 +481,7 @@ header {
   padding-right: 20px; }
 
 .burger-icon {
+  font-size: 1.5em;
   color: #fff; }
 
 @media only screen and (min-width: 752px) {
@@ -493,7 +494,9 @@ header {
   nav {
     display: none; }
   .hero-message {
-    width: 100%; } }
+    width: 100%; }
+  .logo {
+    padding-top: 5px; } }
 
 @media only screen and (max-width: 430px) {
   header {
@@ -504,7 +507,9 @@ header {
   .hero-message {
     width: 100%; }
   nav {
-    display: none; } }
+    display: none; }
+  .logo {
+    padding-top: 5px; } }
 
 @media only screen and (min-height: 750px) {
   .hero {

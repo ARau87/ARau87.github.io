@@ -66,6 +66,7 @@ header {
 }
 
 .burger-icon {
+  font-size: 1.5em;
   color: #fff;
 }
 
@@ -91,6 +92,10 @@ header {
     width: 100%;
   }
 
+  .logo {
+    padding-top: 5px;
+  }
+
 }
 
 @media only screen and (max-width: ($medium-device)){
@@ -110,6 +115,10 @@ header {
 
   nav {
     display: none;
+  }
+
+  .logo {
+    padding-top: 5px;
   }
 
 }
