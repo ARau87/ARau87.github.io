@@ -335,6 +335,7 @@ body {
   .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row; }
   .columns {
     width: 100%;
@@ -364,6 +365,7 @@ body {
   .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column; }
   .columns {
     width: 100%;
@@ -393,6 +395,7 @@ body {
   .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column; }
   .columns {
     width: 100%;
@@ -591,7 +594,8 @@ header {
 
 .technology {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  padding-top: 10px; }
 
 .technology-bar-container {
   width: 70%;
@@ -647,6 +651,7 @@ header {
   margin-top: 60px; }
 
 .project-thumbnail, .project-thumbnail:hover {
+  text-decoration: none;
   height: 250px;
   margin-top: 5px !important;
   border: 2px solid #169e83;
@@ -659,6 +664,13 @@ header {
   padding-top: 80px;
   transition: color 0.2s; }
 
+.project-thumbnail p, .project-thumbnail:hover p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 2px 20px;
+  transition: color 0.2s; }
+
 .project-thumbnail:hover {
   background-color: #169e83; }
 
@@ -668,13 +680,39 @@ header {
 .project-thumbnail:hover h3 {
   color: #fff; }
 
+.project-thumbnail p {
+  color: #169e83; }
+
+.project-thumbnail:hover p {
+  color: #fff; }
+
+.project-vue-chat {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/vue-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
 footer {
-  height: 200px;
+  height: 300px;
   background-color: #333;
   display: flex;
   flex-direction: column-reverse; }
 
 .copyright-container {
   color: #fff;
+  width: 100;
+  margin-bottom: 20px;
   text-align: center;
   padding: 10px 0; }
+
+.link a:visited, .link a:link {
+  text-decoration: none;
+  color: #fff; }
+
+.link i {
+  font-size: 2em;
+  height: auto; }
+
+.link {
+  text-align: center;
+  margin-bottom: 30px; }

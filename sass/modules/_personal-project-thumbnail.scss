@@ -1,6 +1,7 @@
 // Abstract classes
 
 %thumbnail {
+  text-decoration: none;
   height: 250px;
   margin-top: 5px !important;
 
@@ -13,6 +14,14 @@
   width: 100%;
   text-align: center;
   padding-top: 80px;
+  transition: color 0.2s;
+}
+
+%thumbnail-description {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 2px 20px;
   transition: color 0.2s;
 }
 
@@ -38,4 +47,24 @@
   @extend %thumbnail-header;
 
   color: #fff;
+}
+
+.project-thumbnail p {
+  @extend %thumbnail-description;
+
+  color: $color-darker;
+}
+
+.project-thumbnail:hover p {
+  @extend %thumbnail-description;
+
+  color: #fff;
+}
+
+// Styles for individual projects
+.project-vue-chat {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/vue-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

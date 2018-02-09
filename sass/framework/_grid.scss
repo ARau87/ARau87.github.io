@@ -28,6 +28,7 @@
   .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
@@ -84,6 +85,7 @@
   .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 
@@ -140,6 +142,7 @@
   .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
 
