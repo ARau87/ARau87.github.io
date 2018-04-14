@@ -452,6 +452,10 @@ header {
   width: 100%;
   padding-top: 20px; }
 
+.nav-wrapper--fixed {
+  position: fixed;
+  background-color: #333; }
+
 .nav-list {
   text-align: right;
   list-style: none;
@@ -482,6 +486,8 @@ header {
 .burger-wrapper {
   text-align: right;
   padding-right: 20px; }
+  .burger-wrapper:hover {
+    cursor: pointer; }
 
 .burger-icon {
   font-size: 1.5em;
@@ -499,7 +505,9 @@ header {
   .hero-message {
     width: 100%; }
   .logo {
-    padding-top: 5px; } }
+    transform: translateY(-5px); }
+  .burger-wrapper {
+    transform: translateY(-10px); } }
 
 @media only screen and (max-width: 430px) {
   header {
@@ -512,25 +520,27 @@ header {
   nav {
     display: none; }
   .logo {
-    padding-top: 5px; } }
+    transform: translateY(-5px); }
+  .burger-wrapper {
+    transform: translateY(-10px); } }
 
 @media only screen and (min-height: 750px) {
   .hero {
-    margin-top: 480px;
+    padding-top: 480px;
     text-align: center; } }
 
 @media only screen and (min-height: 550px) and (max-height: 749px) {
   .hero {
-    margin-top: 300px;
+    padding-top: 300px;
     text-align: center; } }
 
 @media only screen and (max-height: 549px) {
   .hero {
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: center; } }
 
 .aboutme {
-  margin-top: 55px; }
+  margin-top: 100px; }
 
 .aboutme-header h2 {
   font-size: 1.3em;
@@ -716,3 +726,40 @@ footer {
 .link {
   text-align: center;
   margin-bottom: 30px; }
+
+.mobile-nav .nav-item, .nav-close {
+  margin: 0;
+  padding-top: 9vh;
+  display: block;
+  height: 20vh;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff; }
+  .mobile-nav .nav-item:hover, .nav-close:hover, .mobile-nav .nav-item:active, .nav-close:active {
+    color: #1abc9c !important;
+    background-color: #ffffff; }
+  .mobile-nav .nav-item:visited, .nav-close:visited {
+    color: #ffffff; }
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #1abc9c; }
+  .mobile-nav--hidden {
+    display: none; }
+
+.mobile-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0; }
+
+.nav-close {
+  padding: 0;
+  background-color: #169e83;
+  font-size: 1.1em;
+  border: none; }

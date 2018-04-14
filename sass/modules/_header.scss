@@ -21,6 +21,14 @@ header {
   padding-top: 20px;
 }
 
+.nav-wrapper--fixed {
+
+  position: fixed;
+
+  background-color: #333;
+
+}
+
 .nav-list {
   text-align: right;
   list-style: none;
@@ -63,6 +71,12 @@ header {
 .burger-wrapper {
   text-align: right;
   padding-right: 20px;
+
+  &:hover {
+
+    cursor: pointer;
+
+  }
 }
 
 .burger-icon {
@@ -93,8 +107,13 @@ header {
   }
 
   .logo {
-    padding-top: 5px;
+    transform: translateY(-5px);
   }
+
+  .burger-wrapper {
+    transform: translateY(-10px);
+  }
+
 
 }
 
@@ -118,8 +137,13 @@ header {
   }
 
   .logo {
-    padding-top: 5px;
+    transform: translateY(-5px);
   }
+
+  .burger-wrapper {
+    transform: translateY(-10px);
+  }
+
 
 }
 
@@ -127,21 +151,21 @@ header {
 
 @media only screen and (min-height: 750px){
   .hero {
-    margin-top: 480px;
+    padding-top: 480px;
     text-align: center;
   }
 }
 
 @media only screen and (min-height: 550px) and (max-height: 749px){
   .hero {
-    margin-top: 300px;
+    padding-top: 300px;
     text-align: center;
   }
 }
 
 @media only screen and (max-height: 549px){
   .hero {
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: center;
   }
 }

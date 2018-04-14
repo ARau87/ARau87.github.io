@@ -13,7 +13,7 @@
 
   </head>
   <body>
-    <header>
+    <header id="header">
       <!-- Logo and main navigation -->
       <div class="nav-wrapper row">
         <div class="logo col-6-of-12">
@@ -21,10 +21,10 @@
         </div>
         <nav class="col-6-of-12">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About Me</a></li>
-            <li class="nav-item"><a href="#">Projects</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#header">Home</a></li>
+            <li class="nav-item"><a href="#aboutme">About Me</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="col-6-of-12 mobile burger-wrapper">
@@ -40,8 +40,20 @@
 
     </header>
 
+    <!-- The mobile navigation -->
+
+    <aside class="mobile-nav mobile-nav--hidden">
+                <ul class="nav-list">
+                    <button class="nav-close">X</button>            
+                    <a class="nav-item" href="#header">Home</a>
+                    <a class="nav-item" href="#aboutme">About Me</a>
+                    <a class="nav-item" href="#projects">Projects</a>
+                    <a class="nav-item" href="#contact">Contact</a>
+                </ul>
+    </aside>
+
     <!-- Section 1: About me -->
-    <section class="aboutme">
+    <section id="aboutme" class="aboutme">
       <div class="columns aboutme-header">
         <h2>My expertise</h2>
       </div>
@@ -150,7 +162,7 @@
     </section>
 
     <!-- Section 3: Personal projects -->
-    <section class="personal-projects">
+    <section id="projects" class="personal-projects">
       <div class="columns personal-projects-header">
         <h2>Side Projects</h2>
       </div>
@@ -158,6 +170,7 @@
       <div class="projects-container">
         <div class="row projects">
 
+          <!-- Vue Chat Project -->
           <a href="https://vuechat1.herokuapp.com/" class="project-thumbnail project-vue-chat col-3-of-12-wol">
             <h3>Vue Chat</h3>
             <p>
@@ -171,7 +184,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
       <div class="copyright-container">
         &copy; 2018 Andreas Rau
       </div>
@@ -187,5 +200,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/main.js">
+      
+    </script>
   </body>
 </html>
